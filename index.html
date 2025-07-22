@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="b.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="login-card">
+      <h2>Welcome</h2>
+      <form id="loginForm">
+
+        <label for="phone">Username</label>
+        <input type="text" id="phone" placeholder="username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" required />
+
+        <button type="submit">دخول</button>
+        <div id="error" style="color: red; text-align: center; margin-top: 10px;"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript للتحقق والتوجيه -->
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // منع الإرسال التلقائي
+
+      const phone = document.getElementById("phone").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const errorDiv = document.getElementById("error");
+
+      // المعلومات الصحيحة
+      const correctPhone = "FatimaQueen";
+      const correctPassword = "fatima123";
+
+      if (phone === correctPhone && password === correctPassword) {
+        // التوجيه للصفحة الأخرى
+        window.location.href = "br.html";
+      } else {
+        // رسالة الخطأ
+        errorDiv.textContent = "The username or password is incorrect";
+      }
+    });
+  </script>
+</body>
+</html>

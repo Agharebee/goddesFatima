@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Divine Gallery of Fatima</title>
+  <link rel="stylesheet" href="pl.css" />
+</head>
+<body>
+  <div class="overlay">
+    <h1 class="main-title">Goddess Fatima</h1>
+
+    <div class="gallery">
+      <div class="gallery-item fade-in delay-1">
+        <img src="a.jpg" alt="Devotion 1" />
+        <p><strong>wrki</strong> hna bach t3rfi kifach ankhdmk ila khlitini nkon ur slave wakha kataerfini .</p>
+        <button onclick="location.href='1.html'">Enter</button>
+      </div>
+
+      <div class="gallery-item fade-in delay-2">
+        <img src="b.jpg" alt="Devotion 2" />
+        <p><strong>wrki</strong> hna bach t3rfi kifach knt kanhlm bik w baghi nkon ur slave</p>
+        <button onclick="location.href='2.html'">Enter</button>
+      </div>
+
+      <div class="gallery-item fade-in delay-3">
+        <img src="e.jpg" alt="Devotion 3" />
+        <p>hna ghadi <strong>ntlbk</strong> bach tkhlini nkon ur slave w flkhre mabghitich hhh.</p>
+        <button onclick="location.href='3.html'">Enter</button>
+      </div>
+    </div>
+
+   <h2>I am Amine, and I’m the one doing this to try to express my love for you, my goddess</h2>
+   <p>mhm khlina mn anglais had set web li ylh kantaelm ngado kayhdar aelik w kifach bghit nkon 
+     ur slave w kifach ana aready bach ndir ay haja gltili
+     w nkhdmk hsn mn hadok li makataerfich 🥺🥺 </p>
+  </div>
+
+  <script>
+    // Optional: Auto slideshow highlight effect
+    const galleryItems = document.querySelectorAll(".gallery-item");
+    let current = 0;
+
+    setInterval(() => {
+      galleryItems.forEach((item, i) => {
+        if(i === current) {
+          item.style.opacity = "1";
+          item.style.transform = "translateY(0) scale(1.1) rotateZ(0)";
+          item.style.zIndex = 10;
+          item.style.boxShadow = "0 20px 40px rgba(255, 0, 255, 0.5)";
+          item.style.borderColor = "#ff66cc";
+        } else {
+          item.style.opacity = "0.5";
+          item.style.transform = "translateY(10px) scale(0.95) rotateZ(1deg)";
+          item.style.zIndex = 1;
+          item.style.boxShadow = "0 0 15px rgba(255, 255, 255, 0.1)";
+          item.style.borderColor = "transparent";
+        }
+      });
+      current = (current + 1) % galleryItems.length;
+    }, 6000);
+  </script>
+  <div class="contract-button">
+  <button onclick="location.href='contract.html'">contract between Goddess Fatima and amine</button>
+</div>
+
+</body>
+</html>
